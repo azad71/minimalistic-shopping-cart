@@ -1,0 +1,31 @@
+{
+  "name": "shopping-cart",
+  "version": "1.0.0",
+  "description": "a minimal shopping cart",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client-install": "npm install --prefix client",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "Javascript",
+    "MERN",
+    "ReactJS",
+    "NodeJS"
+  ],
+  "author": "Azad Mamun",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "short-unique-id": "^3.0.2"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0"
+  }
+}
